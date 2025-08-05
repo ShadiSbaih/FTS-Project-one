@@ -1,2 +1,19 @@
 @import "/core.css";
 
+/*start header & footer*/
+ul {
+  list-style: none;
+  padding-block: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.primary-button {
+  background-color: var(--primaryColor);
+  color: var(--bgColor);
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-family: var(--mainFont);
+}
+
+/* end header & footer
