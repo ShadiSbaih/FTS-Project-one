@@ -323,3 +323,52 @@ ul {
   }
 }
 /* end work section  */
+
+
+/* start book section */
+#book-section {
+  background: var(--primaryColor);
+  color: var(--bgColor);
+  margin-inline: 20px;
+  display: flex;
+  margin-inline: auto;
+  flex-direction: column;
+  padding: 1.5em;
+  padding-block: 3em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  gap: 3em;
+  margin-bottom: 2em;
+}
+#book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#book-info > h2 {
+  font-size: 2em;
+}
+#book-info > p {
+  line-height: 2em;
+  font-size: 1em;
+}
+@media only screen and (min-width: 835px) {
+  #book-section {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 6em;
+  }
+  #book-info {
+    width: 50%;
+    text-align: start;
+  }
+  #book-info > h2 {
+    text-align: start;
+    align-self: start;
+  }
+}
+/* end book section */
