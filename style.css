@@ -17,3 +17,133 @@ ul {
 }
 
 /* end header & footer
+
+/* start hero section */
+
+#hero-section {
+  display: flex;
+  flex-direction: column;
+}
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding-block: 32px;
+}
+#heroTitle {
+  font-size: 32px;
+}
+#heroPar {
+  color: var(--textColor);
+}
+/* hero section grid */
+
+/* Mobile phones: 320px–440px */
+@media only screen and (min-width: 320px) and (max-width: 440px) {
+  #hero-bento-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "GD GD "
+      "UIUX Apps"
+      "ILL ILL"
+      "Photo Photo"
+      "MG MG";
+    gap: 10px;
+  }
+  #hero-bento-grid > img {
+    border-radius: 22px;
+    margin: auto;
+    display: block;
+  }
+
+  #GD {
+    grid-area: GD;
+  }
+  #UIUX {
+    grid-area: UIUX;
+  }
+  #Apps {
+    grid-area: Apps;
+  }
+  #ILL {
+    grid-area: ILL;
+  }
+  #Photo {
+    grid-area: Photo;
+  }
+  #MG {
+    grid-area: MG;
+  }
+}
+
+/* Small tablets: 441px–767px,iPads: 768px–834px */
+@media only screen and (min-width: 441px) and (max-width: 834px) {
+  #hero-bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "GD GD UIUX Apps "
+      "GD GD ILL ILL "
+      "Photo Photo MG MG ";
+    gap: 10px;
+    margin: 0 auto;
+  }
+  #GD {
+    grid-area: GD;
+  }
+  #UIUX {
+    grid-area: UIUX;
+  }
+  #Apps {
+    grid-area: Apps;
+  }
+  #ILL {
+    grid-area: ILL;
+  }
+  #Photo {
+    grid-area: Photo;
+  }
+  #MG {
+    grid-area: MG;
+  }
+}
+
+/* Desktop & large screens: 835px+ */
+@media only screen and (min-width: 835px) {
+  #hero-bento-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "GD GD UIUX Apps Photo Photo "
+      "GD GD ILL ILL  MG MG";
+    gap: 10px;
+    margin: 0 auto;
+  }
+  #GD {
+    grid-area: GD;
+  }
+  #UIUX {
+    grid-area: UIUX;
+  }
+  #Apps {
+    grid-area: Apps;
+  }
+  #ILL {
+    grid-area: ILL;
+  }
+  #Photo {
+    grid-area: Photo;
+  }
+  #MG {
+    grid-area: MG;
+  }
+}
+
+/* end hero section */
